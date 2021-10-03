@@ -1,0 +1,19 @@
+<mvc:View
+    controllerName="sl.barcode.controller.BarcodeScanner"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<Label text="Barcode value" />
+                    <Input id="scannedValue" placeholder="Use scan button to enter barcode" />
+                    <Button icon="sap-icon://bar-code" text="Scan" tooltip="Scan barcode" press="onScanForValue">
+                    </Button>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
